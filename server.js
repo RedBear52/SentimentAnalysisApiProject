@@ -14,11 +14,11 @@ const port = 3000
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
-app.use('/', express.static('../public'))
+app.use('/', express.static('./public'))
 
-app.get('/', (req, res) => {
-    res.send('Howdy Worldiverse!')
-}) 
+// app.get('/', (req, res) => {
+//     res.sendFile('/Users/ryanspearman/Desktop/testServer/public/index.html')
+// }) 
 
 app.listen(port, () => {
     console.log(`Server up and running on port: ${port}`)
