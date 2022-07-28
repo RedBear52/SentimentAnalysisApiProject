@@ -1,6 +1,6 @@
-const queryAPI = async (txt, lang, key) => {
-   console.log(txt, lang, key)
-    const analysisData = await fetch(`http://localhost:3000/fetchTest/${txt}/${lang}/${key}`)
+const queryAPI = async (txt, lang) => {
+   console.log(txt, lang)
+    const analysisData = await fetch(`http://localhost:3000/fetchTest/${txt}/${lang}`)
         .then(res => res.json())
         .then(analyzedText => {
             console.log(analyzedText)
