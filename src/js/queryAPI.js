@@ -7,7 +7,7 @@ const queryAPI = async (txt, lang) => {
         .then(analyzedText => {
             showClient(analyzedText)
             console.log(analyzedText)
-        })
+    })
 }
 
 export { queryAPI }

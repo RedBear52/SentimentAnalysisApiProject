@@ -6,15 +6,16 @@ const showClient = (data) => {
         data.score_tag,
         data.sentence_list[0].text
     )
-    const displayCard = document.getElementById('card')
-    const dataPointList = document.getElementById('ul')
-    // const dataList = displayCard.append(dataPointList)
+    const listDisplay = document.getElementById('list')
+    const polarity = document.getElementById('polarity').innerHTML= `
+    <li>${data.subjectivity}</li>
+    <li>${data.score_tag}</li>
+    <li>${data.sentence_list[0].text}</li>
+`
+    const subjectivity = document.getElementById('subjectivity')
+    const exampleText = document.getElementById('example-text')
     // dataList.innerHTML( 
-    // `
-    //     <li>${data.subjectivity}</li>
-    //     <li>${data.score_tag}</li>
-    //     <li>${data.sentence_list[0].text}</li>
-    // `
+   
     // ) 
     
     

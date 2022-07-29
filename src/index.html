@@ -24,7 +24,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>test-sentiment</title>
-    <!-- <link rel="stylesheet" href="main.css"> -->
+  <!-- <link rel="stylesheet" href="main.css">  -->
 </head>
 <body>
     <form name="collect info" type="submit">
@@ -32,8 +32,15 @@
         <input id="lang" type="input" name="input">
         <button id="btn" type="button">Submit Info</button>
     </form>
+    <section>
+        <ul class="list">
+            <li class="list-item" id="polarity"></li>
+            <li class="list-item" id="subjectivity"></li>
+            <li class="list-item" id="example-text"></li>
+        </ul>
+    </section>
 
-    <script type="module" src="app.js"></script>
+    <script type="module" src="./app.js"></script>
 </body>
 </html>
 
