@@ -8,20 +8,16 @@ const showClient = (data) => {
     )
     const listDisplay = document.getElementById('list')
     const polarity = document.getElementById('polarity').innerHTML= `
-    <li>${data.subjectivity}</li>
-    <li>${data.score_tag}</li>
-    <li>${data.sentence_list[0].text}</li>
+    <li><h1>Sentiment Analysis</h1></li>
+    <li>Subjectivity: ${data.subjectivity}</li>
+    <li>Emotional Tone: ${data.score_tag}</li>
+    <li>Sample Text Snippet: ${data.sentence_list[0].text}</li>
 `
+
     const subjectivity = document.getElementById('subjectivity')
     const exampleText = document.getElementById('example-text')
-    // dataList.innerHTML( 
-   
-    // ) 
-    
-    
     // need to iterate over a data object to dynamically add the list
     // SEE landing page NavBar functionality for guidance/inspiration
-
  }
  
  export { showClient }

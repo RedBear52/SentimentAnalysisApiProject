@@ -1,13 +1,10 @@
 require('dotenv').config()
-console.log(process.env)
-// const mockAPIResponse = require('mockData.js')
 const express = require('express')
 const bodyParser = require('body-parser')
 const fetch = require('node-fetch')
 const path = require('path')
 const cors = require('cors')
 const { resolveSoa } = require('dns')
-
 
 const app = express()
 console.log(app)
@@ -17,7 +14,7 @@ app.use(cors())  //---'requires a middleward function'---//
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
-app.use('/', express.static('./src'))
+app.use('/', express.static('./dist'))
 
 
 
