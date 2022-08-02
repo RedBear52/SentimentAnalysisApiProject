@@ -2,6 +2,7 @@ const path = require('path')
 const webpack = require('webpack')
 
 module.exports = {
+    mode: 'production',
     entry: './src/app.js',
     output: {
         filename: 'main.js',
@@ -27,7 +28,12 @@ module.exports = {
                 test: /\.scss$/,
                 use: ['style-loader', 'css-loader', 'sass-loader']
             },
-
-        ]
-    }
+        ],
+    },
+    devServer: {
+        static: {
+            directory: path.join(__dirname, 'dist')
+        },
+        port: 8000
+    },
 }

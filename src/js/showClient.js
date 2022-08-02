@@ -8,7 +8,6 @@ const showClient = (data) => {
     )
     const listDisplay = document.getElementById('list')
     const polarity = document.getElementById('polarity').innerHTML= `
-    <li><h1>Sentiment Analysis</h1></li>
     <li>Subjectivity: ${data.subjectivity}</li>
     <li>Emotional Tone: ${data.score_tag}</li>
     <li>Sample Text Snippet: ${data.sentence_list[0].text}</li>

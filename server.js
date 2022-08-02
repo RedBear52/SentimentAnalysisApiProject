@@ -7,7 +7,8 @@ const cors = require('cors')
 const { resolveSoa } = require('dns')
 
 const app = express()
-console.log(app)
+// console.log(app)
+// const port = 8000
 const port = 3000
 
 app.use(cors())  //---'requires a middleward function'---//
