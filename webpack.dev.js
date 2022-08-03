@@ -1,5 +1,6 @@
 const path = require('path')
 const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
     mode: 'development',
@@ -30,9 +31,14 @@ module.exports = {
             },
         ],
     },
-    devtool: 'inline-source-map',
+    // devtool: 'inline-source-map',
     devServer: {
         static: './dist',
         port: 3000
     },
+    plugins: [
+        new HtmlWebpackPlugin({
+            title: 'Development'
+        })
+    ]
 }
