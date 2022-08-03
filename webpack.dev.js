@@ -1,5 +1,6 @@
 const path = require('path')
 const webpack = require('webpack')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
@@ -9,6 +10,7 @@ module.exports = {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
     },
+    devtool: 'inline-source-map',
     // output: {
     //     libraryTarget: 'var',
     //     library: 'Client'
@@ -35,14 +37,14 @@ module.exports = {
             },
         ],
     },
-    // devtool: 'inline-source-map',
     devServer: {
         static: './dist',
         port: 3001
     },
     plugins: [
+        new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
-            title: 'Development'
+            template: './src/index.html'
         })
     ]
 }

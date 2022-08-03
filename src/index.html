@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test-sentiment</title>
+</head>
+<body>
+    <header>
+        <h1>Sentiment Analysis</h1>
+    </header>
+    <form name="collect info" type="submit" class="form">
+        <input id="client-text" type="input" name="input">
+        <input id="lang" type="input" name="input">
+        <button id="btn" type="button">Submit Info</button>
+    </form>
+    <section>
+        <style>
+            ul {
+                list-style-type: none;
+            }
+        </style>
+        <ul class="list">
+            <li class="list-item" id="polarity"></li>
+            <li class="list-item" id="subjectivity"></li>
+            <li class="list-item" id="example-text"></li>
+        </ul>
+    </section>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
+
+
+
+<!-- <input id="name" type="text" name="input" value="" onblur="onBlur()" 
+placeholder="Name">
+<input type="submit" name="" value="submit" onclick="return 
+Client.handleSubmit(event)" onsubmit="return handleSubmit(event)"> -->
