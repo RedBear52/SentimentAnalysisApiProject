@@ -12,7 +12,6 @@ const showClient = (data) => {
     <li>Emotional Tone: ${data.score_tag}</li>
     <li>Sample Text Snippet: ${data.sentence_list[0].text}</li>
 `
-
     const subjectivity = document.getElementById('subjectivity')
     const exampleText = document.getElementById('example-text')
     // need to iterate over a data object to dynamically add the list

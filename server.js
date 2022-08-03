@@ -25,14 +25,10 @@ app.get('/fetchTest/:text/:lang/', async (req, res) => {
     inputText = req.params.text
     lang = req.params.lang
     const apiKey = process.env.API_KEY
-    // const apiKey = 'd632a4eb2923650457c2e8784a23830c'
     
     let fetchedData = await fetch(`https://api.meaningcloud.com/sentiment-2.1?key=${apiKey}&lang=${lang}&txt=${inputText}&model=general&dm=s&sdg=l&txtf=plain&of=json&uw=n&rt=n&egp=n`)
-    // let fetchedData = await fetch(`https://api.meaningcloud.com/sentiment-2.1?key=d632a4eb2923650457c2e8784a23830c&lang=en&txt=Afterreceivingwaexplor&model=general&dm=s&sdg=l&txtf=plain&of=json&uw=n&rt=n&egp=n`)
     .then(res => res.json())
     res.send(fetchedData)
-    // let baseUrl = `https://api.meaningcloud.com/sentiment-2.1?key=${apiKey}&lang=${lang}&txt=${inputText}&model=general&dm=s&sdg=l&txtf=plain&of=json&uw=n&rt=n&egp=n`
-
 }) 
 
 app.listen(port, () => {

@@ -9,6 +9,10 @@ module.exports = {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
     },
+    // output: {
+    //     libraryTarget: 'var',
+    //     library: 'Client'
+    // },
     module: {
         rules: [
             {
@@ -34,7 +38,7 @@ module.exports = {
     // devtool: 'inline-source-map',
     devServer: {
         static: './dist',
-        port: 3000
+        port: 3001
     },
     plugins: [
         new HtmlWebpackPlugin({

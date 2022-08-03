@@ -8,3 +8,5 @@ import { handleFormData } from './js/handleFormData.js'
 handleFormData()
 
 alert('running!')
+
+export { handleFormData }
