@@ -9,8 +9,6 @@ const cors = require('cors')
 const { resolveSoa } = require('dns')
 
 const app = express()
-// console.log(app)
-// const port = 8000
 const port = 3000
 
 app.use(cors())  //---'requires a middleward function'---//
@@ -34,18 +32,3 @@ app.get('/fetchTest/:text/:lang/', async (req, res) => {
 app.listen(port, () => {
     console.log(`Server up and running on port: ${port}`)
 })
-
-
-
-
-
- // res.send({"this is an object": "objectThing"})
-
-
-    // console.log(data)
-    // const options = {
-    //   method: 'POST',
-    //   headers: {
-    //     Accept: 'application/json'
-    //   }
-    // }

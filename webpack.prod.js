@@ -1,3 +1,4 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
 const webpack = require('webpack')
 
@@ -15,9 +16,6 @@ module.exports = {
                 exclude: /node_modules/,
                 use: {
                     loader: "babel-loader",
-                    options: {
-                        presets: ['@babel/preset-env']
-                    }
                 }
             },
             {
@@ -37,4 +35,9 @@ module.exports = {
         },
         port: 8000
     },
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: './src/client/views/index.html' 
+        })
+    ]
 }

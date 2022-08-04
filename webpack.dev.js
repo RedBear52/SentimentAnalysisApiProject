@@ -18,12 +18,7 @@ module.exports = {
                 exclude: /node_modules/,
                 use: {
                     loader: "babel-loader",
-                    options: {
-                        presets: ['@babel/preset-env']
-                    }
-                }
-            },
-            {
+                },
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader']
             },
@@ -38,9 +33,14 @@ module.exports = {
         port: 3001
     },
     plugins: [
-        new CleanWebpackPlugin(),
+        new CleanWebpackPlugin({
+            dry: true,
+            verbose: true,
+            cleanStaleWebpackAssets: true,
+            protectWebpackAssets: false
+        }),
         new HtmlWebpackPlugin({
-            template: './src/views/index.html'
+            template: './src/client/views/index.html'
         })
     ]
 }
