@@ -6,10 +6,10 @@ const WorkboxPlugIn = require('workbox-webpack-plugin')
 module.exports = {
     mode: 'production',
     entry: './src/app.js',
-    // output: {
-    //     filename: 'main.js',
-    //     path: path.resolve(__dirname, 'dist'),
-    // },
+    output: {
+        filename: 'main.js',
+        path: path.resolve(__dirname, 'dist'),
+    },
     module: {
         rules: [
             {
