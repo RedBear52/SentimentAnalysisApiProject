@@ -1,4 +1,5 @@
-import { queryAPI } from "./queryAPI.js"
+import { validateInput } from "./validateInput.js"
+// import { queryAPI } from "./queryAPI.js"
 
 const handleFormData = () => {
     const button = document.getElementById('btn')
@@ -6,7 +7,15 @@ const handleFormData = () => {
     e.preventDefault()
     let language = document.getElementById('lang').value
     let clientText = document.getElementById('client-text').value
-    return queryAPI(clientText, language)
+
+    console.log(clientText)
+    // console.log("::: Form Submitted :::")
+
+    // if(validateInput(clientText)) {
+        validateInput(clientText, language)
+        // } else {
+        //     alert('Please enter a valid url')
+        // }
     })
 }
 
