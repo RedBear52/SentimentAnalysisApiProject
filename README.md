@@ -1,4 +1,4 @@
-# Natural Language Processing API - News Evaluation Project
+# Natural Language Processing API - Article Evaluation Project
 
 # Project Explanation
 This is a basic web application that prompts the user to input the url address of a webpage.
