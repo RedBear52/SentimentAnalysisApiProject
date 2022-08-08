@@ -4,24 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test-sentiment</title>
+    <title>Sentiment Analysis Site</title>
 </head>
 <body>
     <header>
         <h1>Sentiment Analysis</h1>
     </header>
     <form name="collect info" type="submit" class="form">
-        <input id="client-text" type=url name="website" required pattern="">
-        <input id="lang" type="input" name="input">
+        <input id="client-text" type="url" name="website">
         <button id="btn" type="button">Submit Info</button>
     </form>
     <section>
-        <style>
-            ul {
-                list-style-type: none;
-            }
-        </style>
-        <ul class="list">
+        <ul id="list">
             <li class="list-item" id="polarity"></li>
             <li class="list-item" id="subjectivity"></li>
             <li class="list-item" id="example-text"></li>
@@ -29,26 +23,19 @@
     </section>
 
     <script type="module" src="main.js"></script>
-    <script>
-        // Don't register the service worker until the page has fully loaded
-        window.addEventListener('load', () => {
+    <!-- <script> -->
+        <!-- // Don't register the service worker until the page has fully loaded
+        // window.addEventListener('load', () => {
         // Check to see if service worker is available
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/service-worker.js').then(() => {
-            console.log('Service worker registered!');
-            }).catch((error) => {
-            console.warn('Error registering service worker:');
-            console.warn(error);
-            });
-        }
-        });
-    </script>
+        // if ('serviceWorker' in navigator) {
+        //     navigator.serviceWorker.register('/service-worker.js').then(() => {
+        //     console.log('Service worker registered!');
+        //     }).catch((error) => {
+        //     console.warn('Error registering service worker:');
+        //     console.warn(error);
+        //     });
+        // }
+        // }); -->
+    <!-- </script>  -->
 </body>
 </html>
-
-
-
-<!-- <input id="name" type="text" name="input" value="" onblur="onBlur()" 
-placeholder="Name">
-<input type="submit" name="" value="submit" onclick="return 
-Client.handleSubmit(event)" onsubmit="return handleSubmit(event)"> -->
