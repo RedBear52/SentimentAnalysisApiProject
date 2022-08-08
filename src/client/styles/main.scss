@@ -1,14 +1,17 @@
+// $$ COLOR PALETTE $$ //
+$clr-font-main: rgb(16, 44, 3);
+$clr-green-light: rgb(180, 255, 205);
+$clr-font-hover: rgb(0, 250, 42);
+
+
+// ---- FONTS/TYPOGRAPHY ---- //
+$fz-default: 18px;
+
 :root {
     font-family: monospace, sans-serif;
-    --fz-default: 36px;
-
+    font-size: $fz-default;
     display: flex;
     align-content: center;
-
-// ---- COLOR PALETTE ---- //
-    --clr-font-main: rgb(16, 44, 3);
-    --clr-green-light: rgb(180, 255, 205);
-    --clr-font-hover: rgb(0, 250, 42);
 }
 
 .wrapper {
@@ -32,11 +35,11 @@ ul {
 }
 
 li {
-    color: var(--clr-font-main);
+    color: $clr-font-main;
 }
 
 h1 {
-    color: var(--clr-font-main);
+    color: $clr-font-main;
   }
 
   button {
@@ -44,15 +47,14 @@ h1 {
       padding: 8px;
       border-radius: 4px;
       font-family: inherit;
-      background-color: var(--clr-font-main);
+      background-color: $clr-font-main;
       color: #fff;
 
       &:hover {
-        color: var(--clr-font-main);
+        color: $clr-font-main;
         background-color: #fff;
         transition: ease-in-out 0.15s;
       }
-  
   }
 
   

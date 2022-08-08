@@ -4,7 +4,7 @@ const showClient = (data) => {
         listDisplay.innerHTML =
         `
         <p>An error ocurred while attempting to analyze the sentiment of the requested site : 
-        <strong>Please enter an alternative request.</strong></p>
+        <strong>Please enter an alternative url.</strong></p>
         `
     } else {
         const listDisplay = document.getElementById('list').innerHTML=`

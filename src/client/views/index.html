@@ -7,7 +7,7 @@
     <title>Sentiment Analysis Site</title>
 </head>
 <body>
-    <div class="wrapper">
+    <div class="wrapper" id="container">
         <header>
             <h1>Sentiment Analysis</h1>
         </header>
@@ -16,7 +16,7 @@
             <input id="client-text" type="url" name="website" placeholder="www.udacity.com">
             <button id="btn" type="button">Get Analysis</button>
         </form>
-        <section>
+        <section class="results-list-container">
             <ul id="list">
                 <li class="list-item" id="polarity"></li>
                 <li class="list-item" id="subjectivity"></li>
