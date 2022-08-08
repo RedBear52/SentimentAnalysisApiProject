@@ -1,5 +1,4 @@
 const showClient = (data) => {
-    console.log(data)
     if (data.status.credits === '0') {
         const randomizer = Math.floor(Math.random() * 9) + 1
         const colorPalette = ["red", "blue", "green", "yellow", "black", "purple", "pink", "aqua", "gold", "maroon"]
@@ -16,7 +15,6 @@ const showClient = (data) => {
         <li>Emotional Tone: ${data.score_tag}</li>
         <li>Sample Text Snippet: ${data.sentence_list[0].text}</li>`
     }
-    
  }
  
  export { showClient }

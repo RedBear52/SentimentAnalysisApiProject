@@ -1,20 +1,23 @@
-ul {
-    list-style-type: none;
-}
 
 body {
     background-color: wheat;
 }
 
+ul {
+    list-style-type: none;
+}
+
 li {
-    color: darkblue;
+    color: fuchsia;
 }
 
 h1 {
-    color: darkgreen;
+    color: fuchsia;
   
     &:hover {
-      color: blue;
+      color: rgb(255, 187, 0);
     }
 
   }
+
+  

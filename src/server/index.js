@@ -1,6 +1,4 @@
 const dotenv = require('dotenv').config()
-const webpack = require('webpack')
-const webpackDevServer = require('webpack-dev-server')
 const express = require('express')
 const bodyParser = require('body-parser')
 const fetch = require('node-fetch')
@@ -10,13 +8,11 @@ const cors = require('cors')
 const app = express()
 const port = 3000
 
-app.use(cors())  //---'requires a middleward function'---//
+app.use(cors()) 
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
 app.use('/', express.static('./dist'))
-
-
 
 app.get('/fetchTest/:text/', async (req, res) => {
     inputText = req.params.text

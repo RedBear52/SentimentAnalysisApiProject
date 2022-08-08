@@ -7,7 +7,6 @@ const queryAPI = async (txt) => {
             .then(res => res.json())
             .then(analyzedText => {
                 showClient(analyzedText)
-                console.log(analyzedText)
         })
     } catch {
         document.getElementById('client-text').innerText=`something went wrong with the server request`

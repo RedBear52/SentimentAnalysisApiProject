@@ -6,6 +6,4 @@ import { handleFormData } from './client/js/handleFormData.js'
 
 handleFormData()
 
-alert('Here we are!')
-
 export { handleFormData }
