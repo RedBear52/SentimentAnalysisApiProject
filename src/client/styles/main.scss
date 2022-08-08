@@ -1,23 +1,58 @@
+:root {
+    font-family: monospace, sans-serif;
+    --fz-default: 36px;
+
+    display: flex;
+    align-content: center;
+
+// ---- COLOR PALETTE ---- //
+    --clr-font-main: rgb(16, 44, 3);
+    --clr-green-light: rgb(180, 255, 205);
+    --clr-font-hover: rgb(0, 250, 42);
+}
+
+.wrapper {
+    border: 2px black;
+    border-style: solid;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
 body {
-    background-color: wheat;
+    background-color: rgb(255, 255, 255);
+    max-width: 800px;
+    margin: 100px auto;
 }
 
 ul {
     list-style-type: none;
+    max-width: 800px;
 }
 
 li {
-    color: fuchsia;
+    color: var(--clr-font-main);
 }
 
 h1 {
-    color: fuchsia;
-  
-    &:hover {
-      color: rgb(255, 187, 0);
-    }
+    color: var(--clr-font-main);
+  }
 
+  button {
+      border: none;
+      padding: 8px;
+      border-radius: 4px;
+      font-family: inherit;
+      background-color: var(--clr-font-main);
+      color: #fff;
+
+      &:hover {
+        color: var(--clr-font-main);
+        background-color: #fff;
+        transition: ease-in-out 0.15s;
+      }
+  
   }
 
   

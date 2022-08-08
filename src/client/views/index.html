@@ -7,35 +7,37 @@
     <title>Sentiment Analysis Site</title>
 </head>
 <body>
-    <header>
-        <h1>Sentiment Analysis</h1>
-    </header>
-    <form name="collect info" type="submit" class="form">
-        <label>Enter website address:</label>
-        <input id="client-text" type="url" name="website">
-        <button id="btn" type="button">Get Analysis</button>
-    </form>
-    <section>
-        <ul id="list">
-            <li class="list-item" id="polarity"></li>
-            <li class="list-item" id="subjectivity"></li>
-            <li class="list-item" id="example-text"></li>
-        </ul>
-    </section>
-    <script type="module" src="main.js"></script>
-    <!-- <script> -->
-        <!-- // Don't register the service worker until the page has fully loaded
-        // window.addEventListener('load', () => {
-        // Check to see if service worker is available
-        // if ('serviceWorker' in navigator) {
-        //     navigator.serviceWorker.register('/service-worker.js').then(() => {
-        //     console.log('Service worker registered!');
-        //     }).catch((error) => {
-        //     console.warn('Error registering service worker:');
-        //     console.warn(error);
-        //     });
-        // }
-        // }); -->
-    <!-- </script>  -->
+    <div class="wrapper">
+        <header>
+            <h1>Sentiment Analysis</h1>
+        </header>
+        <form name="collect info" type="submit" class="form">
+            <label>Enter website address:</label>
+            <input id="client-text" type="url" name="website" placeholder="www.udacity.com">
+            <button id="btn" type="button">Get Analysis</button>
+        </form>
+        <section>
+            <ul id="list">
+                <li class="list-item" id="polarity"></li>
+                <li class="list-item" id="subjectivity"></li>
+                <li class="list-item" id="example-text"></li>
+            </ul>
+        </section>
+        <script type="module" src="main.js"></script>
+        <!-- <script>
+            // Don't register the service worker until the page has fully loaded
+            window.addEventListener('load', () => {
+            // Check to see if service worker is available
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('/service-worker.js').then(() => {
+                console.log('Service worker registered!');
+                }).catch((error) => {
+                console.warn('Error registering service worker:');
+                console.warn(error);
+                });
+            }
+        })
+        </script>  -->
+    </div>
 </body>
 </html>
