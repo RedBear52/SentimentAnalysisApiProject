@@ -22,7 +22,7 @@ app.get('/fetchTest/:text/', async (req, res) => {
     .then(res => res.json())
     res.send(fetchedData)
     } catch {
-        alert('you been caught!')
+        console.log('An error ocurred while attempted to fetch data from meaningcloud')
     }
 }) 
 

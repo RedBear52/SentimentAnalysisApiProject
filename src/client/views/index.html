@@ -25,9 +25,7 @@
         </section>
         <script type="module" src="main.js"></script>
         <script>
-            // Don't register the service worker until the page has fully loaded
             window.addEventListener('load', () => {
-            // Check to see if service worker is available
             if ('serviceWorker' in navigator) {
                 navigator.serviceWorker.register('/service-worker.js').then(() => {
                 console.log('Service worker registered!');

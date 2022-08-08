@@ -50,6 +50,12 @@ First clone the repo via the CLI with the following command:
 Then, `cd` into the cloned project directory and run `npm run start`.
 This will start run the server at http://localhost:3000
 
+Before the form and the subsequent API request can function properly, you'll need to go to procure your own API key from Meaningcloud.com.
+Once you have an api key of your own, create a `.env` file in the root directory of the project and add the following code to the file:
+
+`API_KEY = <YOUR MEANING CLOUD API>`
+Save the file and you should be good to go. If you run into trouble with this step, be sure to check out the documentation on the node `dotenv` package which is used in this (and many other) projects to make for easy management of enviornment variables.
+
 # Sandbox
 If you'd like to experiment with this app for educational/evaluative purposes, you may want to run the webpack-dev-server via the `npm run build-dev` command.
 This will run a live, reloading dev server tool that makes for a better dev experience when tweaking, testing and experimenting with the code.
