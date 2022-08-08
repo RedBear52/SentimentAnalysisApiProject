@@ -53,6 +53,7 @@ This will start run the server at http://localhost:3000
 # Sandbox
 If you'd like to experiment with this app for educational/evaluative purposes, you may want to run the webpack-dev-server via the `npm run build-dev` command.
 This will run a live, reloading dev server tool that makes for a better dev experience when tweaking, testing and experimenting with the code.
+NOTE: This will run the server at http://localhost:3001
 
 # Usage
 [(Back to Table of Contents)](#table-of-contents)
